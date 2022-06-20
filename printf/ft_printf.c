@@ -39,6 +39,7 @@ int			ft_numlen(long long n, int base_len)
 
 void		ft_putnum(long long n, int base_len, char *base)
 {
+    
 	if (n >= base_len)
 		ft_putnum(n / base_len, base_len, base);
 	write(1, &base[n %  base_len], 1);
